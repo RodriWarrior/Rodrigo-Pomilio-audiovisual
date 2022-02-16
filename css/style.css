@@ -1,0 +1,760 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box
+}
+/* Home */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+body{
+    background-color: black;
+}
+.workSans{
+    font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+}
+.portada{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.portada img{
+    width: 320px;
+}
+.divCarousel{
+    width: 100%;
+}
+/* #menu ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style-type: none;
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+}
+#menu ul li a{
+    color: goldenrod;
+    text-decoration: none;
+    font-size: 1.2em;
+} */
+.p-4 ul li a{
+    color: goldenrod;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+.p-4 ul li{
+    list-style-type: none;
+    text-align: center;
+}
+.logoChico{
+    width: 180px;
+    justify-self: center;
+}
+.menu ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    padding: 0%;
+    font-size: 1.2em;
+}
+.menu ul li{
+    justify-self: center;
+    align-self: center;
+    list-style-type: none;
+    color: goldenrod;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: goldenrod;
+}
+.covers{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+main img{
+    width: 320px;
+}
+footer{
+    background-color: goldenrod;
+    height: 5em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+footer h4{
+    text-align: center;
+    padding: 0%;
+    align-self: center;
+}
+footer a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+/* Photography */
+div nav ul{
+    background-color: goldenrod;
+    height: 9em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 1em;
+    font-size: 1.2em;
+    border-top: 0.5em solid white;
+    padding: 0.5em;
+}
+div nav ul li{
+    color: black;
+    justify-self: center;
+    list-style-type: none;
+}
+div nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+section h3{
+    text-align: center;
+    color: white;
+    margin: 2em;
+}
+#galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#galeria img{
+    width: 320px;
+}
+.galeria3{
+    height: 210px;
+}
+.photography{
+    display: flex;
+    flex-direction: column;
+}
+section a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+/* Audiovisual */
+main h5{
+    color: white;
+    margin: 1.2em;
+    text-align: center;
+    font-size: 1.4em;
+}
+main iframe{
+    width: 320px;
+}
+/* Color Grading */
+main h3{
+    color: white;
+    margin: 1.2em;
+    text-align: center;
+    font-size: 1.4em;
+}
+.italic{
+    background-color: white;
+    padding: 1em;
+    border-top: goldenrod 0.5em solid;
+    border-bottom: goldenrod 0.5em solid;
+    font-style: italic;
+    margin-bottom: 1.2em;
+}
+section ol{
+    color: white;
+    text-align: center;
+    font-size: 1.4em;
+    list-style-type: none;
+}
+section ol img{
+    width: 320px;
+}
+/* About Us */
+main p{
+    background-color: white;
+    padding: 1em;
+    border-top: goldenrod 0.5em solid;
+    border-bottom: black 0.5em solid;
+}
+/* Contact */
+fieldset{
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+}
+@media only screen and (min-width: 480px){
+    /* Photography */
+    #galeria img{
+        width: 480px;
+    }
+    .galeria3{
+        height: 320px;
+    }
+    /* Audiovisual */
+    main iframe{
+        width: 480px;
+    }
+    /* Home */
+    main img{
+        width: 480px;
+    }
+    /* Color Grading */
+    section ol img{
+        width: 480px;
+    }
+}
+@media only screen and (min-width: 600px){
+    #galeria img{
+        width: 600px;
+    }
+    .galeria3{
+        height: 400px;
+    }
+    /* Audiovisual */
+    main iframe{
+        width: 600px;
+    }
+    /* Home */
+    main img{
+        width: 600px;
+    }
+    /* Color Grading */
+    section ol img{
+        width: 600px;
+    }
+}
+@media only screen and (min-width: 1024px){
+    .covers img{
+        width: 1024px;
+    }
+    header .menu{
+        height: 6em;
+    }
+    .menu ul{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+    }
+    .menu ul li{
+        text-align: center;
+    }
+    /* Photography */
+    div nav ul{
+        background-color: goldenrod;
+        height: 2.7em;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        font-size: 1.2em;
+        border-top: 0.5em solid white;
+        padding: 0.5em;
+    }
+    #galeria img{
+        width: 512px;
+    }
+    .galeria{
+        height: 350px;
+    }
+    .galeria3{
+        height: 350px;
+    }
+    /* Audiovisual */
+    main iframe{
+        width: 1024px;
+        height: 720px;
+    }
+    /* Home */
+    .covers{
+        display: flex;
+        flex-direction: row;
+    }
+    .covers img{
+        width: 512px;
+    }
+    /* Color Grading */
+    section ol img{
+        width: 1024px;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .covers img{
+        width: 1024px;
+    }
+    header .menu{
+        height: 6em;
+    }
+    .menu ul{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 1fr;
+    }
+    .menu ul li{
+        text-align: center;
+    }
+    /* Photography */
+    div nav ul{
+        background-color: goldenrod;
+        height: 2.7em;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        font-size: 1.2em;
+        border-top: 0.5em solid white;
+        padding: 0.5em;
+    }
+    #galeria img{
+        width: 600px;
+    }
+    .galeria{
+        height: 350px;
+    }
+    .galeria3{
+        height: 350px;
+    }
+    /* Audiovisual */
+    main iframe{
+        width: 1200px;
+        height: 720px;
+    }
+    /* Home */
+    .covers{
+        display: flex;
+        flex-direction: row;
+    }
+    .covers img{
+        width: 1200px;
+    }
+    .divCarousel{
+        width: 1200px;
+        background: linear-gradient(black,goldenrod);
+        padding: 0%;
+    }
+    .carousel-inner{
+        width: 1200px;
+        padding: 0%;
+    }
+    /* Color Grading */
+    section ol img{
+        width: 1200px;
+    }
+}
+@media only screen and (min-width: 1400px){
+    /* Photography */
+    h3{
+        animation-duration: 0.2s;
+        animation-name: destello;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes destello{
+        0%{
+            opacity: 0.5;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    .recto{
+        transform: rotate(-90deg);
+        text-align: left;
+    }
+    .photography a{
+        font-size: 2em;
+    }
+    .photography span{
+        padding: 3em;
+    }
+    div nav ul{
+        background-color:black;
+        height: 2.7em;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        font-size: 1.3em;
+        border-top: 0.5em solid white;
+        border-bottom: solid 0.5em white;
+        padding-bottom: 1.8em;
+    }
+    #list a{
+        color: goldenrod;
+    }
+    .photography{
+        background-image: linear-gradient(black 10%,goldenrod);
+    }
+    .photography img{
+        width: 1200px;
+        text-align: center;
+    }
+    #galeria2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #galeria2{
+        text-align: center;
+    }
+    #galeria img{
+        width: 1200px;
+    }
+    .galeria{
+        height: 720px;
+        filter: grayscale();
+        transition: all 1.5s;
+        z-index: 1;
+    }
+    .galeria:hover{
+        filter: sepia();
+        z-index: 1;
+    }
+    .galeria3{
+        height: 800px;
+        filter: grayscale();
+        transition: all 1.5s;
+    }
+    .galeria3:hover{
+        filter: none;
+        z-index: 2;
+    }
+    .galeria4{
+        filter: grayscale();
+        transition: all 1.5s;
+    }
+    .galeria4:hover{
+        filter: none;
+        z-index: 3;
+    }
+    .galeria5{
+        filter: grayscale();
+        transition: all 1.5s;
+    }
+    .galeria5:hover{
+        filter: none;
+        z-index: 4;
+    }
+    #galeria2 img{
+        width: 1200px;
+    }
+    .land{
+        filter: grayscale();
+        transition: all 1.5s;
+        z-index: 1;
+    }
+    .land:hover{
+        filter: none;
+    }
+    .show{
+        filter: grayscale();
+        transition: all 1.5s;
+        z-index: 1;
+    }
+    .show:hover{
+        filter: none;
+    }
+    .sports{
+        filter: grayscale();
+        transition: all 1.5s;
+        z-index: 1;
+    }
+    .sports:hover{
+        filter: none;
+    }
+    section h3{
+        font-size: 3em;
+    }
+    /* Audiovisual */
+    main iframe{
+        width: 1920px;
+        height: 720px;
+    }
+    /* Home */
+    .portada{
+        height: 60.5em;
+        display: flex;
+        justify-content: center;
+    }
+    .logoChico{
+        width: 12em;
+    }
+    .portada img{
+        height: 60.5em;
+        width: 60.5em;
+    }
+    #menu ul{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        list-style-type: none;
+    }
+    #menu ul li a{
+        color: goldenrod;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+    #menu ul li a:hover{
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+    .menu ul li a{
+        color: goldenrod;
+        font-size: 0.8em;
+    }
+    .divCarousel{
+        padding-left: 8em;
+        padding-right: 8em;
+        background: linear-gradient(black,goldenrod);
+        width: 100%;
+    }
+    header .menu{
+        height: 8em;
+    }
+    .menu ul li{
+        font-size: 1.3em;
+        text-align: center;
+    }
+    #menu ul li{
+        font-size: 1.3em;
+        text-align: center;
+    }
+    li a:hover{
+        color: white;
+        font-weight: bold;
+    }
+    .menu li a:hover{
+        color: white;
+        font-weight: bold;
+        transform: rotate(-15deg);
+    }
+    /* Color Grading */
+    section ol img{
+        width: 1920px;
+    }
+    footer h4{
+        font-size: 1.5em;
+    }
+    footer a{
+        font-size: 1.5em;
+    }
+    /* Contact */
+    fieldset{
+        font-size: 1.5em;
+    }
+    fieldset select{
+        font-size: 1em;
+    }
+    input{
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 1920px){
+    /* Photography */
+    h3{
+        animation-duration: 0.2s;
+        animation-name: destello;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes destello{
+        0%{
+            opacity: 0.5;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    .recto{
+        transform: rotate(-90deg);
+        text-align: left;
+    }
+    .photography a{
+        font-size: 2em;
+    }
+    .photography span{
+        padding: 3em;
+    }
+    div nav ul{
+        background-color:black;
+        height: 2.7em;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        font-size: 1.3em;
+        border-top: 0.5em solid white;
+        border-bottom: solid 0.5em white;
+        padding-bottom: 1.8em;
+    }
+    #list a{
+        color: goldenrod;
+    }
+    .photography{
+        background-image: linear-gradient(black 10%,goldenrod);
+    }
+    .photography img{
+        width: 1200px;
+        text-align: center;
+    }
+    #galeria2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #galeria2{
+        text-align: center;
+    }
+    #galeria img{
+        width: 1800px;
+    }
+    .galeria{
+        height: 950px;
+        filter: grayscale();
+        transition: all 1.5s;
+        z-index: 1;
+    }
+    .galeria:hover{
+        filter: sepia();
+        z-index: 1;
+    }
+    .galeria3{
+        height: 1020px;
+        filter: grayscale();
+        transition: all 1.5s;
+    }
+    .galeria3:hover{
+        filter: none;
+        z-index: 2;
+    }
+    .galeria4{
+        filter: grayscale();
+        transition: all 1.5s;
+    }
+    .galeria4:hover{
+        filter: none;
+        z-index: 3;
+    }
+    .galeria5{
+        filter: grayscale();
+        transition: all 1.5s;
+    }
+    .galeria5:hover{
+        filter: none;
+        z-index: 4;
+    }
+    #galeria2 img{
+        width: 1800px;
+    }
+    .land{
+        filter: grayscale();
+        transition: all 1.5s;
+        z-index: 1;
+    }
+    .land:hover{
+        filter: none;
+    }
+    .show{
+        filter: grayscale();
+        transition: all 1.5s;
+        z-index: 1;
+    }
+    .show:hover{
+        filter: none;
+    }
+    .sports{
+        filter: grayscale();
+        transition: all 1.5s;
+        z-index: 1;
+    }
+    .sports:hover{
+        filter: none;
+    }
+    section h3{
+        font-size: 3em;
+    }
+    /* Audiovisual */
+    main iframe{
+        width: 1920px;
+        height: 720px;
+    }
+    /* Home */
+    .portada{
+        height: 60.5em;
+        display: flex;
+        justify-content: center;
+    }
+    .logoChico{
+        width: 15em;
+    }
+    .portada img{
+        height: 60.5em;
+        width: 60.5em;
+    }
+    #menu ul{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        list-style-type: none;
+    }
+    #menu ul li a{
+        color: goldenrod;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+    #menu ul li a:hover{
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+    .menu ul{
+        display: grid;
+        grid-template-columns:2fr repeat(6, 1fr);
+        grid-template-rows: 1fr;
+    }
+    .menu ul li a{
+        color: goldenrod;
+        font-size: 0.8em;
+    }
+    .divCarousel{
+        width: 1920px;
+        background: linear-gradient(black,goldenrod);
+        padding: 0%;
+    }
+    .carousel-inner{
+        width: 1920px;
+        padding: 0%;
+    }
+    header .menu{
+        height: 8em;
+    }
+    .menu ul li{
+        font-size: 1.3em;
+        text-align: center;
+    }
+    #menu ul li{
+        font-size: 1.3em;
+        text-align: center;
+    }
+    li a:hover{
+        color: white;
+        font-weight: bold;
+    }
+    .menu li a:hover{
+        color: white;
+        font-weight: bold;
+        transform: rotate(-15deg);
+    }
+    /* Color Grading */
+    section ol img{
+        width: 1920px;
+    }
+    footer h4{
+        font-size: 1.5em;
+    }
+    footer a{
+        font-size: 1.5em;
+    }
+    /* Contact */
+    fieldset{
+        font-size: 1.5em;
+    }
+    fieldset select{
+        font-size: 1em;
+    }
+    input{
+        font-size: 1em;
+    }
+}
